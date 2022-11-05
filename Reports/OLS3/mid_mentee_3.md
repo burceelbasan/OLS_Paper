@@ -10,4 +10,4 @@ Folder includes only multiple choice questions which are 1,2,4,5,6,7,8,9,11,12.
 **Question 2:** OLS-3 is helping me encourage others to work openly
 
 
-![Fig1](../../figures/old_figures/Mid_mentee_Q2.png) 
+![Fig1](../../figures/mid_mentee_3/Mid_mentee_Q2.png) 
