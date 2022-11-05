@@ -11,3 +11,10 @@ Folder includes only multiple choice questions which are 1,2,4,5,6,7,8,9,11,12.
 
 
 ![Fig1](../../figures/mid_mentee_3/Mid_mentee_Q2.png) 
+
+
+**Question 4:** Which of the following aspects of the cohort call work well?
+
+
+![Fig1](../../figures/old_figures/Mid-Mentee_Question 4.png) 
+
