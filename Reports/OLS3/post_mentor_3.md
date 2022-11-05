@@ -16,10 +16,10 @@ Folder includes only multiple choice questions which are 1,,~~2~~,3,**4**,~~5~~,
 **Question 8:** Would you be interested in returning to the OLS-4 as a mentor or expert of the next cohort? *(n=28)* 
 
 
-![Fig3](../../figures/Post_mentor_Q8.png)  
+![Fig3](../../figures/post_mentor_3/Post_mentor_Q8.png)  
 
 
 **Question 9:** Would you recommend us to invite your mentee(s) to OLS-4? *(n=28)* 
 
 
-![Fig3](../../figures/Post_mentor_Q9..png) 
+![Fig3](../../figures/post_mentor_3/Post_mentor_Q9..png) 
