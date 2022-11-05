@@ -16,5 +16,12 @@ Folder includes only multiple choice questions which are 1,2,4,5,6,7,8,9,11,12.
 **Question 4:** Which of the following aspects of the cohort call work well?
 
 
-![Fig1](../../figures/old_figures/Mid-Mentee_Question%204.png) 
+![Fig1](../../figures/old_figures/Mid-Mentee_Question%4.png) 
+
+
+**Question 5:** What should we improve in cohort calls? *(n=23)*
+
+
+![Fig3](../../figures/old_figures/Mid-Mentee_Question%205.png)
+
 
