@@ -7,4 +7,7 @@ Folder includes only multiple choice questions which are 1,2,4,5,6,7,8,9,11,12.
 ![Fig1](../../figures/old_figures/Data3_mid_mentee_1q.png) 
 
 
-xx
+**Question 2:** OLS-3 is helping me encourage others to work openly
+
+
+![Fig1](../../figures/old_figures/Mid_mentee_Q2.png) 
