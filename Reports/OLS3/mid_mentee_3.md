@@ -40,7 +40,7 @@ Folder includes only multiple choice questions which are 1,2,~~3~~,4,5,6,7,8,9,~
 **Question 8:** Which of the following mode of communication you find most effective?   *(Multiple Selection, *n=23*)*
 
 
-![Fig4](../../figures/Mid-Mentee_Question%208.png)
+![Fig4](../../figures/old_figures/Mid-Mentee_Question%208.png)
 
 
 
