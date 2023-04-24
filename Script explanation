@@ -1,0 +1,90 @@
+### In most of the questions to make bar graph, I am using this script
+
+library(readxl)
+library(ggplot2)
+library(tidyverse)
+library(wesanderson)
+
+# Example for OLS-5 Post mentor Q17
+
+### Before this point, I am opening the excel sheets that you sent, finding question in there and analyzing it in another sheet like what are the answers (ex: yes, no, maybe). 
+### Then, I am counting the answers manually and creating another excel file that contains only answers and their responds (numbers), naming the file as "Data5_post_mentor_Renamed_17q.xlsx".
+### Introducing the file to R and after here until the last part it is all via R.
+Data5_post_mentor_Renamed_17q<- read_xlsx("Data5_post_mentor_Renamed_17q.xlsx")
+view(Data5_post_mentor_Renamed_17q)
+
+Data5_post_mentor_Renamed_17q <-   Data5_post_mentor_Renamed_17q %>%   
+  mutate(percent_answers = Responses / 19) 
+View(Data5_post_mentor_Renamed_17q)
+
+Data5_post_mentor_Renamed_17q  <- Data5_post_mentor_Renamed_17q %>%   
+  mutate(numbers = c("A1","A2"))
+View(Data5_post_mentor_Renamed_17q)
+
+# 1
+p <-   Data5_post_mentor_Renamed_17q %>% 
+  ggplot(aes(x = numbers, y= percent_answers, fill = numbers, label = scales::percent(percent_answers), labels = numbers))+ 
+  geom_bar(stat="identity", color="black")+ 
+  geom_text(position = position_dodge(width = .9),    # move to center of bars
+            vjust = -0.5,    # nudge above top of bar
+            size = 3)+ 
+  scale_fill_manual(values = wes_palette(2, name = "Royal1",type = "continuous"), name = "") +
+  xlab("Answers")+
+  ylab("Percentage of Answers")+
+  ggtitle("Do you think your mentee was able to effectively engage with OLS throughout the program?")+
+  scale_y_continuous(labels = scales::percent)
+
+
+p
+
+# 2
+p+ scale_fill_discrete(name="Answers",
+                       breaks=c("A1","A2"),
+                       labels=c("Yes, they were able to engage","No, they had difficulty engaging or attending calls"))
+
+### In here, I am doing something manually for coloring. When I run the #1, it gives me the graph with the palette that i introduce. 
+### However, when I do #2 for labelling, it changes the color as rainbow, it says it has been already "filled". To be able to change the color back, I am doing some cutting and pasting manually in powerpoint. I am not sure what is the code to change that :(
+
+
+### To make chart graph, I am using the following script;
+
+# install.packages("ggplot2")
+# install.packages("ggrepel")
+# install.packages("tidyverse")
+install.packages("ggrepel")
+
+library(ggplot2)
+library(ggrepel)
+library(tidyverse)
+
+
+
+# Mid mentor Q14
+
+### Again in here, I am checking the questions and the number of  answers and doing calculation by myself. In chart graphs, I am entering the percentage numbers by hand not making any excel sheet and introducing from there. 
+
+df <- data.frame(value = c(100),
+                 group = paste0("G", 1))
+
+
+df2 <- df %>% 
+  mutate(csum = rev(cumsum(rev(value))), 
+         pos = value/2 + lead(csum, 1),
+         pos = if_else(is.na(pos), value/2, pos))
+
+ggplot(df, aes(x = "" , y = value, fill = fct_inorder(group))) +
+  geom_col(width = 1, color = 1) +
+  coord_polar(theta = "y") +
+  scale_fill_brewer(palette = "Set2") +
+  geom_label_repel(data = df2,
+                   aes(y = pos, label = paste0(value, "%")),
+                   size = 4.5, nudge_x = 1, show.legend = FALSE) +
+  guides(fill = guide_legend(title = "Group")) +
+  theme_void() 
+
+p+ scale_fill_discrete(name="Answers",
+                       labels=c("Yes"))
+                       
+ ### Again in here as well, I have a problem with coloring. I think there is a problem with scale_fill function. It says you already used it.                        
+
+
