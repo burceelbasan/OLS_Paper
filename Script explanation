@@ -8,7 +8,7 @@ library(wesanderson)
 # Example for OLS-5 Post mentor Q17
 
 ### Before this point, I am opening the excel sheets that you sent, finding question in there and analyzing it in another sheet like what are the answers (ex: yes, no, maybe). 
-### Then, I am counting the answers manually and creating another excel file that contains only answers and their responds (numbers), naming the file as "Data5_post_mentor_Renamed_17q.xlsx".
+### Then, I am counting the answers manually and creating another excel file that contains only answers and their responds (numbers), (yes:10, no:5, maybe:3 etc.), naming the file as "Data5_post_mentor_Renamed_17q.xlsx".
 ### Introducing the file to R and after here until the last part it is all via R.
 Data5_post_mentor_Renamed_17q<- read_xlsx("Data5_post_mentor_Renamed_17q.xlsx")
 view(Data5_post_mentor_Renamed_17q)
